@@ -1,81 +1,86 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-
-<link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css" />
-  <link href='style.css' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<div class="container">
-<div class="dreamcast">
-  <div class="dccentre">
-    <div class="dcinsert">
-    <div class="dcscreen"></div>
-    </div><div class="dcYout"></div>
-  <div class="dcY">Y</div>
-  <div class="dcXout"></div><div class="dcX">X</div>
-  <div class="dcAout"></div><div class="dcA">A</div>  <div class="dcBout"> <div class="dcB">B</div></div>
-  </div>
-  <div class="dcleft"></div>
-  <div class="dcright">
-    </div>
-  <div class="dcstart"></div></div>
-<div class="dcthumbstick"></div>
-<div class="dcdpad"></div>
-
-
-<div class="snes">
-  <div class="snesleft">
-  <div class="snesdpad"></div>
-  </div>
-  <div class="snesmiddle">
-    <div class="snesstart"></div><div class="snesselect"></div>
-  </div>
-  <div class="snesright">
-    <div class="padindent">
-        <div class="snesX">
-        </div>
-        <div class="snesY">
-        </div>
-        <div class="snesA">
-        </div>
-        <div class="snesB">
-        </div>
+  <head>
+    <title>Hannah Spencer</title>
     
-    </div></div>
-</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+	  
+	<link href='style.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="circle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+    <div id="headerSection">
+      <!--maybe a menu with more info?-->
+      <div id="picture">
+        <img id = "me" src="H:\Personal\Site\Me.jpg">
+      </div>
+    </div>
+	<div id="social">
+      <table>
+        <tr>
+          <td><a href="https://github.com/hannahlspencer"><img src="H:\Personal\Site\Githubblue.jpg"></a></td>
+          <td><a href="https://www.linkedin.com/in/hannah-spencer-0a548110b"><img src="H:\Personal\Site\Linkedinblue.jpg"></a></td>
+          <td><a href="https://twitter.com/hannahvlspencer"><img src="H:\Personal\Site\Twitterblue.jpg"></a></td>
+        </tr>
+      </table>
+    </div>
+      <div class="accordion vertical">
+        <ul>
+          <li>
+            <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
+            <label for="radio-1">Employment History</label>
+            <div class="content">
+			  <div class="job">
+                <p>London School of Economics, Careers</p>
+				<p>Web and Systems Coordinator <span class="dates">June 2017-Present</span></p>
+			  </div>
+			  <div id="break"></div>
+			  <div class="job">
+				<p>PwC</p>
+				<p>Technology Academy Programme <span class="dates">April 2017</span></p>
+			  </div>
+			  <div id="break"></div>
+			  <div class="job">
+				<p>London School of Economics, Careers</p>
+				<p>Student Enquiries Coordinator <span class="dates">August 2014-June 2017</span></p>
+			  </div>
 
-<div class="nes">
-  <div class="nesdpad"></div>
-  <div class="nesBout"><div class="nesB"></div></div>
-  <div class="nesAout"><div class="nesA"></div></div>
-  <div class="nesstripe1"></div>
-  <div class="nesstripe2"></div>
-  <div class="nesstripe3"></div>
-  <div class="nesstripe4">
-    <div class="nesstart"></div>
-    <div class="nesselect"></div>
-  </div>
-  <div class="nesstripe5"></div>
-  <div class="neslogo">Nintendo</div>
-</div>
-
-<div class="n64">
-  <div class="n64left"></div>
-  <div class="n64centre"></div>
-  <div class="n64right"></div>
-  <div class="n64main">
-    <div class="n64dpad"></div>
-    <div class="n64start"></div>
-    <div class="n64ts"></div>
-    <div class="n64B"></div>
-    <div class="n64A"></div>
-    <div class="n641"></div>
-    <div class="n642"></div>
-    <div class="n643"></div>
-    <div class="n644"></div>
-    <div class="n64logo">Nintendo</div>
-  </div>
-</div>
-</div>
-</body>
+            </div>
+          </li>
+          <li>
+            <input type="radio" id="radio-2" name="radio-accordion" />
+            <label for="radio-2">Apps</label>
+            <div class="content">
+              <p>Project 1</p>
+		      <p>Project 2</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" id="radio-3" name="radio-accordion" />
+            <label for="radio-3">Games</label>
+            <div class="content">
+              <p>Project 1</p>
+			  <p>Project 2</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" id="radio-4" name="radio-accordion" />
+            <label for="radio-4">Creative Coding</label>
+            <div class="content">
+              <p>Project 1</p>
+		      <p>Project 2</p>
+			  <p>See my <a href="https://creativecoding2017.wordpress.com/">blog</a> for more.</p>
+            </div>
+          </li>
+        </ul>
+    </div>
+	<canvas data-processing-sources="circle.js"></canvas>
+  </body>
+</html>
