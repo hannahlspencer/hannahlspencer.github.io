@@ -1,516 +1,168 @@
-body {
-  background-color: #006600;
-}
-.container {
-  margin: 100px;
-}
-.dccentre {
-  height: 120px;
-  width: 120px;
-  background: #f2f2f2;
-  border-radius: 50%;
-  font-size: 8px;
-  font-family: sans-serif;
+#headerSection {
+	background-color: rgba(131,173,181,1);
+	/*
+	background: -webkit-linear-gradient(left top,rgba(131,173,181,0),rgba(131,173,181,1)); 
+	background: -o-linear-gradient(bottom right,rgba(131,173,181,0),rgba(131,173,181,1)); 
+	background: -moz-linear-gradient(bottom right,rgba(131,173,181,0),rgba(131,173,181,1));
+	background: linear-gradient(to bottom right, rgba(131,173,181,0), rgba(131,173,181,1)); 
+	*/
+	width: 100%;
+	height: 20%;
   position: relative;
-  left: 50px;
-  top: 20px;
 }
-.dcinsert {
-  height: 60px;
-  width: 40px;
-  background: #d9d9d9;
-  border-radius: 20%;
+
+#picture {
+  height: 100px;
+  width: 100px;
   position: relative;
-  left: 40px;
+  padding-top: 18%;
+  padding-bottom: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
-.dcscreen {
-  height: 30px;
-  width: 30px;
-  background: #99bbff;
-  border-radius: 20%;
+
+#me {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+
+}
+
+
+#text p {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	position: relative;
+	
+}
+
+#social {
+	width: 100%;
+}
+
+#social img:hover {
+  	border-style: solid;
+    border-color: #f2f2f2 #f2f2f2 #8c8c8c #8c8c8c;
+    border-width: 1px 1px 3px 3px;
+  /*color: rgba(47,79,79,1);*/
+}
+
+table {
+	margin: 0 auto;
+}
+td {
+	padding: 15px;
+}
+
+#break {
+  height: 0.3em;
+  max-width: 90%;
+  left: 5%;
+  right: 5%;
   position: relative;
-  left: 5px;
-  top: 20px;
+  line-height: 0.3em;
+  background-color: black;
+ 
 }
-.dcYout {
-  height: 13px;
-  width: 13px;
-  background: #00cc66;
-  border-radius: 50%;
-  position: relative;
-  left: 99px;
-  top: -10px;
+
+/*accordion css*/
+.accordion {
+    font-family:Arial, Helvetica, sans-serif; 
+    margin:0 auto;
+    font-size:14px;
+    border:1px solid #542437;
+    border-radius:10px;
+    width:600px;
+    padding:1%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+    background:#fff;
 }
-.dcY {
-  position: relative;
-  left: 103px;
-  top: -20px;
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;    
 }
-.dcXout {
-   height: 13px;
-  width: 13px;
-  background: #ffff00;
-  border-radius: 50%;
-  position: relative;
-  left: 85px;
-  top: -18px;
+.accordion li {
+    margin:0;
+    padding:0;
 }
-.dcX {
-  position: relative;
-  left: 89px;
-  top: -28px;
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
 }
-.dcAout {
-     height: 13px;
-  width: 13px;
-  background: #ff0000;
-  border-radius: 50%;
-  position: relative;
-  left: 99px;
-  top: -28px;
+.accordion label {
+	font-family: 'Lato', sans-serif;
+    display:block;
+    font-size:16px;
+    line-height:16px;
+    background:rgba(131,173,181,1);
+    border:1px solid black;
+    color:black;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
 }
-.dcA {
-  position: relative;
-  left: 103px;
-  top: -39px;
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background:#8c8c8c;
+    color:#FFF;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
 }
-.dcBout {
-   height: 13px;
-  width: 13px;
-  background: #0066ff;
-  border-radius: 50%;
-  position: relative;
-  left: 110px;
-  top: -63px;
+.accordion .content {
+    padding:0 10px;
+    overflow:hidden;
+    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
 }
-.dcB {
-  position: relative;
-  left: 4px;
+.accordion p {
+    color:#333;
+	margin: 3%;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
 }
-.dcleft {
-  height: 0;
-  width: 80px;
-  border-top: 40px solid #f2f2f2;
-  border-left: 10px solid transparent;
-  border-right: 25px solid transparent;
-  border-radius: 20px 20px 100px 100px;
-     transform: scaleY(-1) rotate(-80deg);
-  -webkit-transform: scaleY(-1) rotate(-80deg);
-  -moz-transform: scaleY(-1) rotate(-80deg);
-position: relative;
-  top: -40px;
-  left: 10px;
-  z-index: -1;
+.accordion h3 {
+    color:#542437;
+    padding:0;
+    margin:10px 0;
 }
-.dcright {
-  height: 0;
-  width: 80px;
-  border-top: 40px solid #f2f2f2;
-  border-left: 10px solid transparent;
-  border-right: 25px solid transparent;
-  border-radius: 20px 20px 100px 100px;
-     transform:  rotate(100deg);
-  -webkit-transform:  rotate(100deg);
-  -moz-transform: rotate(100deg);
-position: relative;
-  top: -80px;
-  left: 95px;
-  z-index: -1;
+
+
+
+/* Vertical */
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
 }
-.dcstart {
-    width: 0; 
-  height: 0; 
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 15px solid #d9d9d9;
-  position: relative;
-  left: 103px;
-  top: -90px;
+.vertical ul li label {
+    padding:10px;
 }
-.dcthumbstick {
-  width: 20px;
-  height: 20px;
-  background: #d9d9d9;
-  border-radius: 50%;
-  position: relative;
-  top: -155px;
-  left: 55px;
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom:0;
 }
-.dcdpad {
-  background: #d9d9d9;
-  height: 20px;
-  position: relative;
-  left: 72px;
-  top: -138px;
-  width: 4px;
+.vertical ul li label:hover {
+    border:1px solid #542437; /* We don't want the border to disappear on hover */
 }
-.dcdpad:after {
-  background: #d9d9d9;
-  content: "";
-  height: 4px;
-  left: -8px;
-  position: absolute;
-  top: 8px;
-  width: 20px;
+.vertical ul li .content {
+    height:0px;
+    border-top:0;
 }
-.snesleft {
-  width: 90px;
-  height: 90px;
-  background: #a6a6a6;
-  border-radius: 50%;
-  position: relative;
-  left: 300px;
-  top: -195px;
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+    height:300px;
+    border:1px solid #542437;
 }
-.snesdpad {
-   background: #4d4d4d;
-  height: 40px;
- position: relative;
-  top: 26px;
-  left: 40px;
-  width: 8px;
-  z-index: 1;
+.dates {
+	float: right;
 }
-.snesdpad:after {
-  background: #4d4d4d;
-  content: "";
-  height: 8px;
-  left: -16px;
-  position: absolute;
-  top: 16px;
-  width: 40px;
-}
-.snesright {
-  width: 90px;
-  height: 90px;
-  background: #a6a6a6;
-  border-radius: 50%;
-  position: relative;
-  left: 420px;
-  top: -350px;
-}
-.snesmiddle {
-  width:120px;
-  height: 65px;
-  background: #a6a6a6;
-    position: relative;
-  left: 340px;
-  top: -285px;
-}
-.snesstart {
-  width: 15px;
-  height: 5px;
-  background:#4d4d4d;
-    transform:  rotate(130deg);
-  -webkit-transform:  rotate(130deg);
-  -moz-transform: rotate(130deg);
-  position: relative;
-  left: 50px;
-  top: 50px
-}
-.snesselect {
-  width: 15px;
-  height: 5px;
-  background:#4d4d4d;
-    transform:  rotate(130deg);
-  -webkit-transform:  rotate(130deg);
-  -moz-transform: rotate(130deg);
-  position: relative;
-  left: 70px;
-  top: 45px;
-    z-index: 1;
-}
-.snesA {
-     height: 15px;
-  width: 15px;
-  background: #ff0000;
-  border-radius: 50%;
-  position: relative;
-  left: 63px;
-  top: 10px;
-}
-.snesB {
-     height: 15px;
-  width: 15px;
-  background: #ffd11a;
-  border-radius: 50%;
-  position: relative;
-  left: 45px;
-  top: 13px;
-}
-.snesY {
-     height: 15px;
-  width: 15px;
-  background: #009933;
-  border-radius: 50%;
-  position: relative;
-  left: 25px;
-  top: 28px;
-}
-.snesX {
-     height: 15px;
-  width: 15px;
-  background: #0066ff;
-  border-radius: 50%;
-  position: relative;
-  left: 43px;
-  top: 25px;
-}
-.nes {
-  width: 200px;
-  height: 75px;
-  background: black;
-  position: relative;
-  left: 300px;
-  top: -180px;
-  border: 15px solid #b3b3b3;
-}
-.nesdpad {
-   background: #4d4d4d;
-  height: 40px;
- position: relative;
-  top: 16px;
-  left: 30px;
-  width: 9px;
-  z-index: 1;
-  /*border: 1px solid white;*/
-}
-.nesdpad:after {
-  background: #4d4d4d;
-  content: "";
-  height: 8px;
-  left: -16px;
-  position: absolute;
-  top: 17px;
-  width: 41px;
-  /*border: 1px solid white;*/
-}
-.nesstripe1 {
-  width: 60px;
-  height: 10px;
-  background: #b3b3b3;
-  position: relative;
-  left: 70px;
-  top: -80px;
-}
-.nesstripe2 {
-  width: 60px;
-  height: 10px;
-  background: #b3b3b3;
-  position: relative;
-  left: 70px;
-  top: -77px;
-}
-.nesstripe3 {
-  width: 60px;
-  height: 10px;
-  background: #b3b3b3;
-  position: relative;
-  left: 70px;
-  top: -74px;
-}
-.nesstripe4 {
-  width: 60px;
-  height: 15px;
-  background: #cccccc;
-  position: relative;
-  left: 70px;
-  top: -69px;
-}
-.nesstart {
-  width: 15px;
-  height: 7px;
-  background: #4d4d4d;
-  position: relative;
-  left: 7px;
-  top: 5px;
-}
-.nesselect {
-  width: 15px;
-  height: 7px;
-  background: #4d4d4d;
-  position: relative;
-  left: 38px;
-  top: -2px;
-}
-.nesstripe5 {
-  width: 60px;
-  height: 10px;
-  background: #b3b3b3;
-  position: relative;
-  left: 70px;
-  top: -63px;
-}
-.nesBout {
-  width: 20px;
-  height: 20px;
-  background: white;
-  position: relative;
-  left: 170px;
-}
-.nesB {
-  width: 20px;
-  height: 20px;
-  background: red;
-  border-radius: 50%;
-}
-.nesAout {
-  width: 20px;
-  height: 20px;
-  background: white;
-  position: relative;
-  left: 140px;
-  top: -20px;
-}
-.nesA {
-  width: 20px;
-  height: 20px;
-  background: red;
-  border-radius: 50%;
-}
-.neslogo {
-  font-family:'Agency FB', arial;
-  font-style: italic;
-  color: red;
-  font-size: 10px;
-  position: relative;
-  left: 150px;
-  top: -125px;
-}
-.n64 {
-  position: relative;
-  left: 30px;
-  top: 190px;
-}
-.n64left {
-  width: 40px;
-  height: 80px;
-  background: #a6a6a6;
-  position: relative;
-  top: -460px;
-  border-radius: 40%;
-}
-.n64centre {
-  width: 45px;
-  height: 130px;
-  background: #a6a6a6;
-  position: relative;
-  top: -550px;
-  left: 60px;
-  border-radius: 40%;
-}
-.n64right {
-  width: 40px;
-  height: 80px;
-  background: #a6a6a6;
-  position: relative;
-  top: -670px;
-  left: 125px;
-  border-radius: 40%;
-}
-.n64main {
-  width: 165px;
-  height: 70px;
-  background: #a6a6a6;
-  position: relative;
-  top: -775px;
-  border-radius: 40%;
-}
-.n64dpad {
-  background: #4d4d4d;
-  height: 30px;
-  position: relative;
-  left: 25px;
-  top: 20px;
-  width: 6px;
-}
-.n64dpad:after {
-  background: #4d4d4d;
-  content: "";
-  height: 6px;
-  left: -12px;
-  position: absolute;
-  top: 12px;
-  width: 30px;
-}
-.n64start {
-  height: 15px;
-  width: 15px;
-  background: red;
-  border-radius: 50%;
-  position: relative;
-  left: 75px;
-  top: 10px;
-}
-.n64ts {
-  height: 12px;
-  width: 12px;
-  background: #d9d9d9;
-  border-radius: 50%;
-  border: 4px solid #4d4d4d;
-  position: relative;
-  left: 73px;
-  top: 20px;
-}
-.n64B {
-  height: 12px;
-  width: 12px;
-  background: #339966;
-  border-radius: 50%;
-  position: relative;
-  left: 105px;
-  top: -28px;
-}
-.n64A {
-  height: 12px;
-  width: 12px;
-  background: #005ce6;
-  border-radius: 50%;
-  position: relative;
-  left: 115px;
-  top: -28px;
-}
-.n641 {
-  height: 9px;
-  width: 9px;
-  background: #ffff33;
-  border-radius: 50%;
-  position: relative;
-  left: 135px;
-  top: -72px;
-}
-.n642 {
-  height: 9px;
-  width: 9px;
-  background: #ffff33;
-  border-radius: 50%;
-  position: relative;
-  left: 135px;
-  top: -62px;
-}
-.n643 {
-    height: 9px;
-  width: 9px;
-  background: #ffff33;
-  border-radius: 50%;
-  position: relative;
-  left: 145px;
-  top: -81px;
-}
-.n644 {
-    height: 9px;
-  width: 9px;
-  background: #ffff33;
-  border-radius: 50%;
-  position: relative;
-  left: 125px;
-  top: -89px;
-}
-.n64logo{
-  font-family:'Agency FB', arial;
-  color: #4d4d4d;
-  font-size: 10px;
-  position: relative;
-  top: -114px;
-  left: 67px;
+canvas {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
 }
