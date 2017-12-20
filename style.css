@@ -134,12 +134,12 @@ nav .container .login-button,
   margin-bottom: 1em;
 }
 #left-about {
-  width: 32.5em;
+  width: 50%;
   background: white;
   border-right: #D3D3D3 1px solid;
 }  
 #right-about {
-  width: 32.5em;
+  width: 50%;
   background: white;
 }
 
