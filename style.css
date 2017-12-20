@@ -244,6 +244,19 @@ td .space {
 }
 
 
+		/*  FOOTER  */
+footer {
+width: 100%;
+background: #000000;
+float: left;
+margin: 0;
+}
+
+address {
+text-align : center; 
+color: #efefef;
+padding: 1% 0;
+}
 
 
 
