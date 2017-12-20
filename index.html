@@ -1,86 +1,114 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <title>Hannah Spencer</title>
-    
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+  <html>
+    <head>
+	  <title></title>
+	  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet'>
+	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	  <link rel='stylesheet' type='text/css' href='styles.css'>
 	  
-	<link href='style.css' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="circle.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  </head>
-  <body>
-    <div id="headerSection">
-      <!--maybe a menu with more info?-->
-      <div id="picture">
-        <img id = "me" src="Me.jpg">
+	  
+	</head>
+	<body>
+	  <nav>
+	    <div class='container'>
+		  <div>
+		    <span class='menu-button'>Menu</span>
+		  </div>
+		</div>
+	  </nav>
+	  
+	    <!-- Nav Menu -->
+      <div class='nav-menu hide'>
+        <div class='container'>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Employment</a></li>
+            <li><a href="#">Education</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-	<div id="social">
-      <table>
-        <tr>
-          <td><a href="https://github.com/hannahlspencer"><img src="Githubblue.jpg"></a></td>
-          <td><a href="https://www.linkedin.com/in/hannah-spencer-0a548110b"><img src="Linkedinblue.jpg"></a></td>
-          <td><a href="https://twitter.com/hannahvlspencer"><img src="Twitterblue.jpg"></a></td>
-        </tr>
-      </table>
-    </div>
-      <div class="accordion vertical">
-        <ul>
-          <li>
-            <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
-            <label for="radio-1">Employment History</label>
-            <div class="content">
-			  <div class="job">
-                <p>London School of Economics, Careers</p>
-				<p>Web and Systems Coordinator <span class="dates">June 2017-Present</span></p>
-			  </div>
-			  <div id="break"></div>
-			  <div class="job">
-				<p>PwC</p>
-				<p>Technology Academy Programme <span class="dates">April 2017</span></p>
-			  </div>
-			  <div id="break"></div>
-			  <div class="job">
-				<p>London School of Economics, Careers</p>
-				<p>Student Enquiries Coordinator <span class="dates">August 2014-June 2017</span></p>
-			  </div>
+	  
+	  <!--Hero banner-->
+	  <div class='container'>
+        <div id='hero-container'>
+          <div id='herobanner'>
+		    <div id='hero-content' alt=''>
+		      <p>Hi. I'm Hannah.</p>
+	        </div>
+          </div>
+        </div>
+	  </div>
 
-            </div>
-          </li>
-          <li>
-            <input type="radio" id="radio-2" name="radio-accordion" />
-            <label for="radio-2">Apps</label>
-            <div class="content">
-              <p>Project 1</p>
-		      <p>Project 2</p>
-            </div>
-          </li>
-          <li>
-            <input type="radio" id="radio-3" name="radio-accordion" />
-            <label for="radio-3">Games</label>
-            <div class="content">
-              <p>Project 1</p>
-			  <p>Project 2</p>
-            </div>
-          </li>
-          <li>
-            <input type="radio" id="radio-4" name="radio-accordion" />
-            <label for="radio-4">Creative Coding</label>
-            <div class="content">
-              <p>Project 1</p>
-		      <p>Project 2</p>
-			  <p>See my <a href="https://creativecoding2017.wordpress.com/">blog</a> for more.</p>
-            </div>
-          </li>
-        </ul>
-    </div>
-	<canvas data-processing-sources="circle.js"></canvas>
-  </body>
-</html>
+	  <!--About section-->
+	  <div id="about">
+	    <div id="left-about">
+		  <p>I like building things and talking to people.</p>
+		</div>
+		<div id="right-about">
+		  <table id="social">
+		    <tr>
+              <td>Email: </td>
+			  <td class="space">
+              <td> hannahlspencer [at] gmail [dot] com</td>
+            </tr>
+		    <tr>
+              <td>LinkedIn: </td>
+			  <td class="space">
+              <td><a href="https://www.linkedin.com/in/hannahlspencer/"> hannahlspencer</a></td>
+            </tr>
+			<tr>
+              <td>GitHub: </td>
+			  <td class="space">
+              <td><a href="https://github.com/hannahlspencer"> hannahlspencer</a></td>
+            </tr>
+			<tr>
+              <td>Twitter: </td>
+			  <td class="space">
+              <td><a href="https://twitter.com/hannahvlspencer">hannahvlspencer</a></td>
+            </tr>
+		  </table>
+		</div>
+	  </div>
+	  
+	  <!--Projects section-->
+      <div id="projects">
+	    <div id="projects-blurb">
+		  <h3>Projects</h3>
+		  </br>
+		  <p>I like learning new things then making new things with those things.</p>
+		  <br>
+		  <p>Here will be a selection of my work, but it is currently under construction.</p>
+		</div>
+		<div id="project-examples">
+		  <div class="project">
+		    <a href="#"><img alt="image" src="synth.jpg" class="proj-image">
+              <div class="decription-wrap">
+                <div class="image-bg">
+                  <p class="desc"><a href="#">Algorithmic music generator </br> (In progress)</a></p>
+                </div>
+              </div>
+            </a>
+		  </div>
+		  <!--<div class="project">
+		    <a href="#"><img alt="image" src="synth.jpg" class="proj-image">
+              <div class="decription-wrap">
+                <div class="image-bg">
+                  <p class="desc"><a href="#">Algorithmic music generator</a></p>
+                </div>
+              </div>
+            </a>
+		  </div>-->
+		</div>
+	  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src='main.js'></script> 
+	</body>
+  </html>
+
+
