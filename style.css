@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 450px;
+  max-width: 100%;
  }
 						/* Navigation bar */
 nav {
@@ -34,8 +34,7 @@ nav .container object {
   padding: .5em 0.5em; 
 }
 
-nav .container .login-button,
-  nav .container .menu-button {
+nav .container .menu-button {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 1em 1.25em;
@@ -96,26 +95,12 @@ nav .container .login-button,
   background-image: url("desk2.jpeg"); 
   display: block;
 }
-
-@media screen and (max-width: 500px) {
-/* applies only if the screen is narrower than 500px */
-#herobanner {
-  margin-left: 1em;
-  background-position: center;
-  background-size: 31em 14em;
-  height: 14em;
-  width: 31em;
-  transition: 0.2s;
-  background-image: url("desk2.jpeg"); 
-  display: block;
-}
-}
 	
 #hero-content{
   position: relative;
   text-align: center;
   min-width: 7em;
-  max-width: 10em;
+  max-width: 5em;
   left: 50%;
   top: 50%;
   padding: 4em;
