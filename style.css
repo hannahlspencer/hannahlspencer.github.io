@@ -157,27 +157,18 @@ td .space {
 }
 
 					/*Projects section*/
-#projects {
-  display: flex;
-  margin-left: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  height: 35em;
-  width: 65em;
-}
-#projects-blurb {
-  width: 10em;
-  background: white;
-  border-right: #D3D3D3 1px solid;
-  padding-top: 3em;
-  padding-left: 2em;
-  padding-right: 1em;
-}
-#project-examples {
-  flex: 1;
-  display: flex;
-  background-color: #FFD5E0;
 
+.title {
+	padding: 1.5em;
+	text-align: center;
+}
+
+#projects #right-about p {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project {
