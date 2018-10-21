@@ -208,15 +208,15 @@ function setNote(key) {
       oscillator.frequency.value = keyboard.highDsharp;
       pressNote("highDsharp", "blackKey_active");
     }
-    if (key == "4") {
+    if (key == "5") {
       oscillator.frequency.value = keyboard.highFsharp;
       pressNote("highFsharp", "blackKey_active");
     }
-    if (key == "5") {
+    if (key == "6") {
 		oscillator.frequency.value = keyboard.highAsharp;
       pressNote("highAsharp", "blackKey_active");
     }
-    if (key == "6") {
+    if (key == "7") {
       pressNote("highAsharp", "blackKey_active");
     }
 }
