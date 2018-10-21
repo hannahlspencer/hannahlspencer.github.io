@@ -214,7 +214,6 @@ function setNote(key) {
     }
     if (key == "5") {
 		oscillator.frequency.value = keyboard.highAsharp;
-
       pressNote("highAsharp", "blackKey_active");
     }
     if (key == "6") {

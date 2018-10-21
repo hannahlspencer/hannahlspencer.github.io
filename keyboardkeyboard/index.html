@@ -4,7 +4,13 @@
   <script src="soundScript.js"></script>
 </head>
 <body>
+  <div id="about">
   <h1>Keyboard Keyboard</h1>
+  <p>Play the keyboard synth with your computer's keyboard (make sure caps lock is off!)</p>
+  <p>Press the Enter key to start (and stop) the synth</p>
+  <p>Press the 0 key to change the synth type</p>
+  </div>
+
   <div
   tabindex = "1"
   onkeydown="setNote(event.key)"
@@ -13,26 +19,27 @@
 	<ul id="piano">
     <li><div class="space"></div></li>
 
-		<li><div id="lowF" class="whiteKey"></div></li>
-		<li><div id="lowG" class="whiteKey"></div><span id="lowFsharp" class="blackKey"></span></li>
-		<li><div id="lowA" class="whiteKey"></div><span id="lowGsharp" class="blackKey"></span></li>
-		<li><div id="lowB" class="whiteKey"></div><span id="lowAsharp" class="blackKey"></span></li>
-		<li><div id="middleC" class="whiteKey"></div></li>
+		<li><div id="lowF" class="whiteKey"><span class="whiteNoteKey">`</span></div></li>
+		<li><div id="lowG" class="whiteKey"><span class="whiteNoteKey">Z</span></div><span id="lowFsharp" class="blackKey"><span class="blackNoteKey">A</span></span></li>
+		<li><div id="lowA" class="whiteKey"><span class="whiteNoteKey">X</span></div><span id="lowGsharp" class="blackKey"><span class="blackNoteKey">S</span></span></li>
+		<li><div id="lowB" class="whiteKey"><span class="whiteNoteKey">C</span></div><span id="lowAsharp" class="blackKey"><span class="blackNoteKey">D</span></span></li>
+		<li><div id="middleC" class="whiteKey"><span class="whiteNoteKey">V</span></div></li>
 
-		<li><div id="midD" class="whiteKey"></div><span id="middleCsharp" class="blackKey"></span></li>
+		<li><div id="midD" class="whiteKey"><span class="whiteNoteKey">B</span></div><span id="middleCsharp" class="blackKey"><span class="blackNoteKey">G</span></span></li>
 
-		<li><div id="midE" class="whiteKey"></div><span id="midDsharp" class="blackKey"></span></li>
-		<li><div id="midF" class="whiteKey"></div></li>
-		<li><div id="midG" class="whiteKey"></div><span id="midFsharp" class="blackKey"></span></li>
-		<li><div id="midA" class="whiteKey"></div><span id="midGsharp" class="blackKey"></span></li>
-		<li><div id="midB" class="whiteKey"></div><span id="midAsharp" class="blackKey"></span></li>
-		<li><div id="highC" class="whiteKey"></div></li>
-		<li><div id="highD" class="whiteKey"></div><span id="highCsharp" class="blackKey"></span></li>
-		<li><div id="highE" class="whiteKey"></div><span id="highDsharp" class="blackKey"></span></li>
-		<li><div id="highF" class="whiteKey"></div></li>
-		<li><div id="highG" class="whiteKey"></div><span id="highFsharp" class="blackKey"></span></li>
-		<li><div id="highA" class="whiteKey"></div><span id="highGsharp" class="blackKey"></span></li>
-		<li><div id="highB" class="whiteKey"></div><span "highAsharp" class="blackKey"></span></li>
+		<li><div id="midE" class="whiteKey"><span class="whiteNoteKey">N</span></div><span id="midDsharp" class="blackKey"><span class="blackNoteKey">H</span></span></li>
+		<li><div id="midF" class="whiteKey"><span class="whiteNoteKey">M</span></div></li>
+		<li><div id="midG" class="whiteKey"><span class="whiteNoteKey">,</span></div><span id="midFsharp" class="blackKey"><span class="blackNoteKey">K</span></span></li>
+		<li><div id="midA" class="whiteKey"><span class="whiteNoteKey">.</span></div><span id="midGsharp" class="blackKey"><span class="blackNoteKey">L</span></span></li>
+		<li><div id="midB" class="whiteKey"><span class="whiteNoteKey">/</span></div><span id="midAsharp" class="blackKey"><span class="blackNoteKey">;</span></span></li>
+		
+		<li><div id="highC" class="whiteKey"><span class="whiteNoteKey">Q</span></div></li>
+		<li><div id="highD" class="whiteKey"><span class="whiteNoteKey">W</span></div><span id="highCsharp" class="blackKey"><span class="blackNoteKey">2</span></span></li>
+		<li><div id="highE" class="whiteKey"><span class="whiteNoteKey">E</span></div><span id="highDsharp" class="blackKey"><span class="blackNoteKey">3</span></span></li>
+		<li><div id="highF" class="whiteKey"><span class="whiteNoteKey">R</span></div></li>
+		<li><div id="highG" class="whiteKey"><span class="whiteNoteKey">T</span></div><span id="highFsharp" class="blackKey"><span class="blackNoteKey">5</span></span></li>
+		<li><div id="highA" class="whiteKey"><span class="whiteNoteKey">Y</span></div><span id="highGsharp" class="blackKey"><span class="blackNoteKey">6</span></span></li>
+		<li><div id="highB" class="whiteKey"><span class="whiteNoteKey">U</span></div><span "highAsharp" class="blackKey"><span class="blackNoteKey">7</span></span></li>
 	</ul>
 </div>
 

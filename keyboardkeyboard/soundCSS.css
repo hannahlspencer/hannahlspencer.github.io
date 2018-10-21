@@ -2,6 +2,15 @@
   margin:0px;
   padding:0px;
   list-style:none;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+#about {
+	text-align: center;
+}
+
+h1 {
+	padding: 40px;
 }
 
 .space {
@@ -12,7 +21,8 @@
 #wrapper {
  background: white;
  width: 850px;
- margin:100px;
+ margin-top: 10px;
+ margin-left:240px;
 }
 
 /* White keys */
@@ -115,4 +125,19 @@
   -webkit-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
   -moz-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
   box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+}
+
+.whiteNoteKey {
+	position:absolute;
+	z-index:1;
+	padding-top: 180px;
+	padding-left: 15px;
+}
+
+.blackNoteKey {
+	color: white;
+	position:absolute;
+	z-index:1;
+	padding-top: 90px;
+	padding-left: 4px;
 }
