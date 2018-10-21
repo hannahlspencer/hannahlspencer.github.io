@@ -213,11 +213,14 @@ function setNote(key) {
       pressNote("highFsharp", "blackKey_active");
     }
     if (key == "6") {
-		oscillator.frequency.value = keyboard.highAsharp;
-      pressNote("highAsharp", "blackKey_active");
+		oscillator.frequency.value = keyboard.highGsharp;
+      pressNote("highGsharp", "blackKey_active");
     }
     if (key == "7") {
-      pressNote("highAsharp", "blackKey_active");
+		oscillator.frequency.value = keyboard.highAsharp;
+		      pressNote("highAsharp", "blackKey_active");
+
+		//document.getElementById("highAsharp").classList.add("blackKey_active");
     }
 }
 
