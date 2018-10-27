@@ -52,7 +52,7 @@ h4 {
 /* Section three */
 
 .third-section {
-    background-color: #6495ed;
+    background-color: #595F72;
 	padding-bottom: 4em;
 }
 
@@ -83,10 +83,53 @@ font-weight: bold;
 	height: 80px;
 	width: 80px;
 	border-radius: 10%;
+	background-color: white;
 }
 /* Section four */
 
 .fourth-section {
+	padding-top: 2em;
+    background-color: #6495ed;
+	padding-bottom: 4em;
+}
+
+.fourth-section h1 {
+    padding-bottom: 1em;
+}
+
+.fourth-section a {
+    color: #fff;
+}
+.fourth-section table {
+	margin: auto;
+	
+	border: 0;
+	border-collapse: collapse;
+}
+
+.fourth.section th, td
+{
+  border: 0;
+  padding: 10px;
+  font-family: 'Tajawal', Arial, sans-serif;
+  font-size: 1.5em;
+  max-width: 30em;
+}
+
+.fourth-section .tableheader {
+font-family: 'Raleway', Arial, sans-serif;
+font-weight: bold;
+} 
+.fourth-section .tableimage {
+	height: 80px;
+	width: 80px;
+	border-radius: 10%;
+	
+}
+
+/* fifth section */
+
+.fifth-section {
     background-color: #f1f6db;
 	padding: 2em;
 }
