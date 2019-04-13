@@ -5,93 +5,184 @@
 	<title>Hannah Spencer</title>
 
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 		crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-			crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/f5bded4c51.js"></script>
 	<link rel="stylesheet" href="style.css" />
 	<script src="script.js"></script>
 </head>
 
-<body class="container-fluid">
-	<div class="section first-section" id="first">
-		<div class="photo-section text-center"> 
-			<img class="img-responsive img-circle img-thumbnail" src="myphoto.jpg" />
-			<h1 class="text-center" id="intro-name">Hi. I'm Hannah.</h1><br><br>
-			<!--<h3 class="text-center" id="front">front-end</h3>
-			<h3 class="text-center" id="mobile">android</h3>
-			<h3 class="text-center" id="ai">ai</h3>-->
+<body>
+	<div class="section first-section">
+		<h1 id='intro-name'>Hi. I'm Hannah.</h1>
+	</div>
+	<div class="section second-section">
+		<h2><span>My story so far</span></h2>
+		
+		<div id="items">
+				<div id="myNav" class="overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<div class="overlay-content">
+								<!--<div class="role">
+									<div class='role-image'>
+										<img src='bbcnews.png' />
+									</div>
+									<div class='role-description'>
+										<h3>BBC News Apps</h3>
+										<h5>Mar - Sep '19</h5>
+										<p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ips</p>
+									</div>
+								</div>
+								<div class="role">
+									<div class='role-image'>
+										<img src='isite.jpg' />
+									</div>
+									<div class='role-description'>
+										<h3>iSite & UGC Uploader</h3>
+										<h5>Sep '18 - Mar '19</h5>
+										<p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ips</p>
+									</div>
+									
+								</div>-->
+								<div class="role">
+										<div class='role-image'>
+											<img src='bbcnews.png' />
+										</div>
+										<div class='role-description'>
+											<h3>BBC News Apps</h3>
+											<h5>Mar - Sep '19</h5>
+											<p>I joined News apps in a period of transformation in which both the app appearance and structure was being completely scrapped and rewritten. I was able to contribute from the project's very beginning, from design sprints with the UX team, to user research, to deciding on ways to implement and test the new systems. All programming was done in Kotlin (with the exception of a few JavaScript modules to allow the app's search topics to be set by journalists in the CMS).</p>
+										</div>
+									</div>
+									<div class="role">
+										<div class='role-image'>
+											<img src='isite.jpg' />
+										</div>
+										<div class='role-description'>
+											<h3>iSite & UGC Uploader</h3>
+											<h5>Sep '18 - Mar '19</h5>
+											<p>My first rotation was working full stack on a user-generated content uploader with a place for moderators to view and approve or deny the content submitted. I wrote Java with Spring and Maven in the backend and JavaScript (including Node and React) in the frontend. I also worked with Jenkins and set up permissions in AWS with Python scripts. </p>
+										</div>
+										
+									</div>
+						</div>
+					</div>
+			<div class="role">
+				<div class='role-image'>
+					<img src='BBCNBH.jpg' />
+				</div>
+				<div class='role-description'>
+						<h3><a href='https://www.bbc.co.uk/careers/design_engineering'>BBC</a></h3>
+						<h4>Graduate Software Engineer</h4>
+						<h5>Since Sept '18</h5>
+						<p>Being part of the BBC software engineering graduate scheme has meant I've had the opportunity to be on four different teams for six months each over the course of two years. This scheme has given me experience in both a breadth of technologies and a great variety of team working practices. During this time so far I've been able to work on products that are used by millions across the world, such as the BBC News Android app, and have been given opportunities to affect these products from concept designs to implementation.</p>
+						<p><a href='#' onclick="openNav()">Read more about each team I've contributed to.</a></p>
+				</div>
+			</div>
+			<div class="role">
+					<div class='role-image'>
+						<img src='cfg3.png' />
+					</div>
+					<div class='role-description'>
+							<h3><a href='https://www.codefirstgirls.org.uk/'>Code First: Girls</a></h3>
+							<h4>Assistant Instructor</h4>
+							<h5>Oct - Dec '18</h5>
+							<p>I volunteered to assist a class of twenty SOAS students learning the fundamentals of web development. This included HTML, CSS, UX, JavaScript, and JQuery. </p>
+					</div>
+				</div>
+				<div class="role">
+						<div class='role-image'>
+							<img src='LSEwindow.jpeg' />
+						</div>
+						<div class='role-description'>
+								<h3><a href='http://www.lse.ac.uk/'>London School of Economics</a></h3>
+								<h4>Web and Systems Coordinator</h4>
+								<h5>Jun '17 - Jul '18</h5>
+								<p>At LSE I managed the Careers department's web migration onto a new CMS, maintained bespoke Java and JavaScript programs, and consulted on LSE-wide technology UX. I liaised between Careers and the web/IT teams ensuring all non-technical colleagues had input into and were appropriately trained in the department's tech.</p>
+						</div>
+					</div>
+					<div class="role">
+							<div class='role-image'>
+								<img src='BBK.jpeg' />
+							</div>
+							<div class='role-description'>
+									<h3><a href='http://www.bbk.ac.uk/study/2019/postgraduate/programmes/TMSCOSCI_C'>Birkbeck, University of London</a></h3>
+									<h4>MSc Computer Science with Distinction</h4>
+									<h5>Completed Sept 2018</h5>
+									<p>Birkbeck opened up a whole new world to me. I learnt Java, became obsessed with regex, discovered databases, and fell in love with Kotlin. Puzzling over binary trees with people who were, like me, looking to change their life was so inspiring and gave me the confidence and ability to build and acheive in the career path I've forged now.</p>
+							</div>
+						</div>
+					<div class="role">
+							<div class='role-image'>
+								<img src='pwcentrance.jpeg' />
+							</div>
+							<div class='role-description'>
+									<h3><a href='https://www.pwc.co.uk/careers/student-jobs/work-for-us/graduateopportunities/technology/forensic-technology.html'>PwC</a></h3>
+									<h4>Technology Academy</h4>
+									<h5>April 2017</h5>
+									<p>Having won PwC's 2016 technology challenge I was given the opportunity to spend a week in their technology offices. I was based in their forensic technology department and learnt about their approaches in and the broader landscape of forensic technology, cyber security, and big data analysis.</p>
+							</div>
+						</div>
 		</div>
 	</div>
-	<div class="section second-section" id="second">
-		<div class="row" id="about">
-				<h1 class='text-center'> About me </h1><br><br>
-				<h4 class='text-center'>Graduate software engineer at the BBC.</h4>
-				<h4 class='text-center'>Assistant instructor for Code First: Girls.</h4>
-			<h4 class='text-center'>I like building things and talking to people.</h4><br>
-			<h4 class='text-center'>Talk to me about building things at hannahlspencer[at]gmail.</h4>
-		</div>
-		<div class="social-media">
-			<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-				<li> <a href="https://www.linkedin.com/in/hannahlspencer/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				<li> <a href="https://github.com/hannahlspencer"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-				<li> <a href="https://twitter.com/hanlspen"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li> <a href="https://www.instagram.com/hanlspen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-			    <!--<li> <a href="CV.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>-->
-			</ul>
-		</div>
-	</div>
-	
+	<div class="section third-section">
+		<h2><span>Playing with the creative</span></h2>
+		<p>Literature and music were my first loves, and since discovering computing I like to find fun ways that intersect them. Here are some projects I've done with this in mind:</p>
+		<div class='row'>
+		<div class="album_container" id='first'>
+				<div class="picture">
+				
+					 <div class="front">
+						<img class='img-responsive' src="synth.jpg" alt="#" />
+					</div>
+				
+					<div class="back">	
+					<h3>PlaySoundStation</h3>          
+					<p>A Java-based algorithmic music generator tailored to create music suitable for video games based on the genre of the game and mood of the scene.</p>
+					<a href="https://github.com/hannahlspencer/playsoundstation"><i class="fa fa-github" aria-hidden="true"></i></a>  				    
+					</div>
+				
+					</div>   
+					  
+			 </div>
 
-	<div class="section third-section" id="third">
-		<h1 class="text-center">Projects I've contributed to</h1>
-		
-		  <table>
-		  <tr>
-			  <td><img src="BBC.jpg" class="tableimage" alt="BBC logo"></td>
-			  <td><span class="tableheader">User-generated content uploader</a></span><br>Uploader for BBC user-submitted content written in Java and React</td>
-			  <td></td>
-			</tr>
-			<tr>
-			  <td><img src="LSE_Logo.png" class="tableimage" alt="London School of Economics logo"></td>
-			  <td><span class="tableheader">EventSwipe</span><br>Event attendance program for the London School of Economics written in Java</td>
-			  <td><a href="https://github.com/hannahlspencer/EventSwipe"><i class="fa fa-github" aria-hidden="true"></i></a></td>
-			</tr>
-			<tr>
-			  <td><img src="LSE_Logo.png" class="tableimage" alt="London School of Economics logo"></td>
-			  <td><span class="tableheader">CareerBuilder</span><br>Interactive careers program for the London School of Economics written in HTML, CSS, JavaScript, jQuery</td>
-			  <td><a href="https://github.com/hannahlspencer/CareerBuilder"><i class="fa fa-github" aria-hidden="true"></i></a></td>
-			</tr>
-		</table>
-	
-	</div> 
-	<div class="section fourth-section" id="fourth">
-		<h1 class="text-center">Personal projects</h1>
-		
-		  <table>
-		  <tr>
-		    <td><img src="piano.jpg" class="tableimage" alt="photo of piano keys"></td>
-			  <td><span class="tableheader"><a href="https://hannahlspencer.github.io/keyboardkeyboard/">Keyboard Keyboard</a></span><br>Turns your computer keyboard into a piano with each key representing a different note, written in JavaScript</td>
-			  <td><a href="https://github.com/hannahlspencer/hannahlspencer.github.io/tree/master/keyboardkeyboard"><i class="fa fa-github" aria-hidden="true"></i></a></td>
-			</tr>
-		  <tr>
-			  <td><img src="synth.jpg" class="tableimage" alt="stock photo of a synth"></td>
-			  <td><span class="tableheader">Play-Sound-Station</a></span><br>Video game music generator written in Java<br>Final project for MSc Computer Science</td>
-			  <td><a href="https://github.com/hannahlspencer/playsoundstation"><i class="fa fa-github" aria-hidden="true"></i></a></td>
-			</tr>
-		</table>
-	
+			 <div class="album_container" id='second'>
+					<div class="picture">
+					
+						 <div class="front">
+							<img class='img-responsive' src="piano2.jpg" alt="#" />
+						</div>
+					
+						<div class="back">	
+						<h3><a href="https://hannahlspencer.github.io/keyboardkeyboard/">Keyboard Keyboard</a></h3>          
+						<p>Turns your computer keyboard into a piano-based synth with each key representing a different note and several synth settings, written in JavaScript.</p>
+						<a href="https://github.com/hannahlspencer/hannahlspencer.github.io/tree/master/keyboardkeyboard"><i class="fa fa-github" aria-hidden="true"></i></a>				    
+						</div>
+					
+						</div>  
+							
+				 </div>
+				 </div>
 	</div>
-	
-	<div class="fifth-section" id="fifth">
-		
+	<div class='section contact-section'>
+			<h2><span>Fancy a chat?</span></h2>
+			<p>Let's get in touch. LinkedIn and Twitter are the best places to contact me.</p>
+			<div id='socialicons'>
+				<div class='icon'>
+						<a href='https://www.linkedin.com/in/hannahlspencer/'><img src="LinkedIn.png" alt="#" /></a>
+				</div>
+				<div class='icon'>
+						<a href='https://twitter.com/hanlspen'><img src="twitter.png" alt="#" /></a>
+				</div>
+			</div>
+
 	</div>
 </body>
 </html>
