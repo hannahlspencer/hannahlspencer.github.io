@@ -14,8 +14,15 @@ $(document).ready(() => {
   $('#intro-name').hide().fadeIn(4000);
   
   //$('#panel')
-  $('.accordion').on('click', event => {
-    $(event.currentTarget).closest('.panel').toggleClass('hide')
+  $('.album_container').click(function() {
+    var id = $(this).attr('id');
+    $('#' + id + "front").fadeOut(500);
+ 
+  })  
+
+  $('.album_container').mouseleave(function() {
+    var id = $(this).attr('id');
+    $('#' + id + "front").fadeIn(500);
  
   })  
   

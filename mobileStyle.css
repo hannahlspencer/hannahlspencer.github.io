@@ -57,9 +57,9 @@ h2 {
 	padding-bottom: 3em;
 }
 .role {
-	min-height: 15em;
+	min-height: 5em;
 	height: auto;
-	width: 55em;
+	width: 25em;
 	margin: 1em auto;
 }
 
@@ -67,12 +67,10 @@ h2 {
 	background-color: white;
 	border-radius: 10%;
 	height: 13em;
-	width: 40%;
-	float: left;
 	overflow: hidden;
 	margin: 1em;
 	margin-top: 1.5em;
-	display: flex;
+	display: block;
 	align-items: center;
 }
 
@@ -104,13 +102,12 @@ h2 {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 60%;
+	width: 100%;
 	height: 0%;
-	margin-left: 20%;
 	margin-top: 1%;
 	z-index: 3;
 	background-color: rgba(249,249,249, 0.98);
-	overflow: hidden;
+	overflow-y: scroll;
 	
 
   }
@@ -121,17 +118,17 @@ h2 {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	overflow-y: scroll;
+    overflow-y: scroll;
+    
   }
 
   .overlay .role-image {
 	background-color: white;
 	border-radius: 10%;
 	height: 9em;
-	width: 20%;
-	float: left;
-	margin: 1em;
-	display: flex;
+	width: 70%;
+	margin: 1em auto;
+	display: block;
 	align-items: center;
 }
   .overlay .closebtn:hover, .overlay .closebtn:focus {
@@ -147,16 +144,7 @@ h2 {
 	display: block;
 	transition: 0.3s;
   }
-  
-  /* @media screen and (max-height: 450px) {
-	.overlay {overflow-y: auto;}
-	.overlay a {font-size: 20px}
-	.overlay .closebtn {
-	font-size: 40px;
-	top: 15px;
-	right: 35px;
-	}
-  } */
+
 
 /* Section three */
 
@@ -175,28 +163,29 @@ h2 {
 	font-family: 'Roboto Condensed', Arial, sans-serif;
 	width: 100%; 
 	text-align: center; 
-	margin: 0 auto 50px;
-	font-size: 120%;
+    font-size: 120%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: auto;
 	
 }
 
 /* Tecxt & pictures in third section */
 
 .row {
-	width: 50%;
-	display: flex;
 	margin: 0 auto;
-height: 400px;
+    height: 400px;
   }
   
 .album_container {
-	position: relative;
+    display:block;
+    position: relative;
 	margin: 1em;
- max-width: 250px;
+    max-width: 250px;
 	width: 70%;
 	max-height: 250px;
 	height: 70%; 
-	margin: 0 auto; 
+	margin: 1em auto; 
 
 }
    
@@ -270,13 +259,16 @@ height: 400px;
 }
 
 .contact-section p {
-	color: black;
+    color: black;
+    margin: auto;
 	max-width: 650px;
 	font-family: 'Roboto Condensed', Arial, sans-serif;
 	width: 100%; 
 	text-align: center; 
-	margin: 0 auto 50px;
-	font-size: 120%;
+    font-size: 120%;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
 	
 }
 
