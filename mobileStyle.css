@@ -13,6 +13,10 @@ h1 {
 	padding: 5em;
 }
 
+#intro-name {
+	text-align: right
+}
+
 h2 {
 	max-width: 350px;
 	font-family: 'Roboto Condensed', Arial, sans-serif;
@@ -35,7 +39,7 @@ h2 {
 
 /* Section one*/
 .first-section {
-	background: url(desk.jpg) no-repeat center center fixed; 
+	background: url(NOLA.jpg) no-repeat center center fixed; 
     background-color: #a13d61; 
 }
 
