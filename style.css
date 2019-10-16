@@ -17,6 +17,12 @@ h1 {
 	text-align: right
 }
 
+#intro-name #text-background {
+	padding: 0.25em;
+	background-color: white;
+	border-radius: 25%;
+}
+
 h2 {
 	max-width: 350px;
 	font-family: 'Roboto Condensed', Arial, sans-serif;
