@@ -14,13 +14,13 @@ h1 {
 }
 
 #intro-name {
-	text-align: right
+	margin-top: 12%;
 }
 
 #intro-name #text-background {
 	padding: 0.25em;
 	background-color: white;
-	border-radius: 25%;
+	border-radius: 25em;
 }
 
 h2 {
