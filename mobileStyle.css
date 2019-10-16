@@ -10,17 +10,17 @@ h1 {
 	text-align: center; 
 	color: black;
 	margin: auto;
-	padding: 5em;
+	
 }
 
 #intro-name {
-	text-align: right
+	margin-top: 12%;
 }
 
 #intro-name #text-background {
 	padding: 0.25em;
 	background-color: white;
-	border-radius: 25%;
+	border-radius: 25px;
 }
 
 h2 {
